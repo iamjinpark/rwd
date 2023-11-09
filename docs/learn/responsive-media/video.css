@@ -1,1 +1,31 @@
 /* 반응형 video */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.video {
+  background: yellow;
+  width: 80%;
+}
+
+.video video {
+  width: 100%;
+  height: auto;
+}
+
+/* 이러면 창 크기 변경에 따라 동영상 크기 맞게 변경 */

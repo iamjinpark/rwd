@@ -1,1 +1,23 @@
 /* picture 요소 */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.picture {
+  padding: 2rem;
+  margin: 2rem;
+  border: 1px solid #2f2f2f;
+}
+
+.picture img {
+  max-width: 100%;
+  height: auto;
+  /* width: 200px;
+  height: 200px; */
+}
+
+/* picture요소에 w/h 200px 적용하고 img에 w/h 100% 주면 적용 안됨,
+picture는 소스를 공급하는 박스일뿐, 이미지 크기를 결정하는 요소가 아님 */

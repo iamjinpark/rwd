@@ -1,0 +1,8 @@
+<link rel="preconnect" href="//cdn.jsdelivr.net" /><link rel="preload" as="style" href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT/fonts/variable/woff2/SUIT-Variable.css" />body {
+  font-family: "SUIT Variable", Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
