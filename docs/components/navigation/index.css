@@ -1,0 +1,58 @@
+.component-container {
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 1rem;
+  padding: 2rem;
+}
+
+/* 모바일 디바이스 */
+@media (max-width:768px) {
+  .navigation {
+    background: hsla(225, 57%, 10%, 1);
+    color: #fff;
+    display: flex;
+    flex-flow: column-reverse nowrap;
+  }
+
+  .navigation .button-close {
+    align-self: flex-end;
+  }
+
+  .navigation ul {
+    margin: 0 var(--spacing-xl);
+    padding-block-end: 3.5rem;
+  }
+
+  .navigation li {
+    border-top: 1px solid hsla(225, 57%, 30%, 0.5);
+  }
+
+  .navigation a {
+    display: block;
+    padding: var(spacing-md);
+    margin: 0 -20px;
+  }
+
+  .navigation a:hover,
+  .navigation a:focus {
+    background-color: var(--primary-blue-2);
+  }
+
+}
+
+
+
+/* 데스크탑 디바이스 */
+@media (min-width:768px) {
+  .navigation ul {
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: var(--spacing-sm);
+    color: var(--primary-blue-1);
+    padding: 10px;
+  }
+
+  .navigation .button-close {
+    display: none;
+  }
+}
