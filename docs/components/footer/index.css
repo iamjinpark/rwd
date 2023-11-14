@@ -1,0 +1,80 @@
+.footer {
+  background: var(--grayscale-black);
+  color: var(--grayscale-light-gray);
+  font-size: 0.75rem;
+  line-height: 1.5;
+  letter-spacing: -0.015em;
+  text-align: center;
+  padding-bottom: 2.5em;
+}
+
+.footer * {
+  font-style: normal;
+}
+
+
+.footer-wrapper-1 {
+  border-bottom: 1px solid var(--grayscale-light-gray);
+}
+
+.guide {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  column-gap: 1.25em;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+
+/* calmp 비율 : 650/768*100=84.63 */
+
+.footer-wrapper-2 {
+  margin: 2.5em auto;
+}
+
+.footer-logo {
+  margin: 0 auto;
+}
+
+.footer-wrapper-3 {
+  margin-top: 2em;
+}
+
+.address {
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  column-gap: 15px;
+}
+
+.footer-wrapper-4 {
+  margin-top: 1.6em;
+}
+
+
+@media (min-width:768px) {
+
+  .guide {
+    /* width: clamp(650px, 84.635%, 800px); */
+    flex-wrap: nowrap;
+
+  }
+
+  /* calmp 비율 : 650/768*100=84.63 */
+
+
+  .address {
+    flex-flow: row wrap;
+    width: clamp(610px, 80%, 880px);
+  }
+
+}
+
+@media (max-width:767px) {
+  .guide {
+    width: clamp(268px, 91.73%, 400px);
+    justify-content: center;
+    column-gap: 15px;
+  }
+}

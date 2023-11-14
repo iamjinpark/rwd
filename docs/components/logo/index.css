@@ -7,7 +7,8 @@
 
 
 /* 콘텐츠 이미지 로고 */
-.logo-link {
+.logo-link,
+.logo-figure {
   --size: 8.75em;
 
   display: block;
@@ -18,7 +19,9 @@
 /* width 140/ font-size 16px = 8.75em */
 
 @media (min-width:768px) {
-  .logo-link {
+
+  .logo-link,
+  .logo-figure {
     width: 10em;
   }
 }
